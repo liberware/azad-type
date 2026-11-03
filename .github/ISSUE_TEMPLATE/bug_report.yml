@@ -1,0 +1,28 @@
+name: Bug report
+description: Something converts incorrectly or doesn't work
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the text you typed, what you got and what you expected. Don't paste anything private.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Azad Type version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows and Python version
+      placeholder: Windows 11, Python 3.12
+  - type: input
+    id: app
+    attributes:
+      label: Application you were typing in
+      description: Only if the problem is with desktop typing.
